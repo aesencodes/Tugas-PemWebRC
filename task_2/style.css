@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #242424;
+  color: #e3e3e3;
+  font-family: "Nunito", sans-serif;
+}
+
+/* Navigation */
+.navigation {
+  display: grid;
+  grid-template-columns: 2fr 0.5fr;
+  grid-template-areas: "brand nav";
+  justify-content: space-around;
+  align-items: center;
+  height: 4em;
+  background-color: #131313;
+  padding: 0 10%;
+}
+.navigation .brand {
+  font-size: 2.5em;
+  font-weight: bold;
+  grid-area: brand;
+  cursor: pointer;
+}
+
+.navigation .nav-list {
+  font-weight: 400;
+  grid-area: nav;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.navigation .nav-list a {
+  text-decoration: none;
+  color: #e3e3e3;
+  transition: 100ms;
+  -webkit-transition: 100ms;
+  -moz-transition: 100ms;
+  -ms-transition: 100ms;
+  -o-transition: 100ms;
+}
+
+.navigation .nav-list li:nth-child(1) {
+  border-bottom: 2px #464646 solid;
+}
+
+.navigation .nav-list a:hover {
+  border-bottom: 2px #464646 solid;
+}
+
+/* Container */
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.container .tittle {
+  letter-spacing: 1px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Form */
+.form {
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  grid-template-areas:
+    "name"
+    "email"
+    "password"
+    "confirm-password"
+    "agreement"
+    "button";
+}
+
+.form .name input,
+.form .email input,
+.form .password input,
+.form .confirm-password input {
+  font-family: "Nunito", sans-serif;
+  background-color: #242424;
+  width: 60%;
+  height: 3em;
+  margin: 7px 0 7px 0;
+  outline: 0;
+  border: 1px #393939 solid;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  color: #e3e3e3;
+}
+
+.form .name input:hover,
+.form .email input:hover,
+.form .password input:hover,
+.form .confirm-password input:hover {
+  border: 1px #334363 solid;
+}
+
+.form .name input:focus,
+.form .email input:focus,
+.form .password input:focus,
+.form .confirm-password input:focus {
+  border: 1px #334363 solid;
+}
+
+.form .name {
+  grid-area: name;
+}
+
+.form .email {
+  grid-area: email;
+}
+
+.form .password {
+  grid-area: password;
+}
+
+.form .confirm-password {
+  grid-area: confirm-password;
+}
+
+.form .agreement {
+  grid-area: agreement;
+  display: flex;
+  margin: 7px 0 7px 0;
+  align-items: center;
+}
+
+.form .agreement input {
+  width: 1.3em;
+  height: 1.3em;
+  cursor: pointer;
+}
+
+.form .agreement p {
+  margin-left: 0.5em;
+}
+
+.form .agreement p a {
+  color: #5180dd;
+  text-decoration: none;
+}
+
+.form button {
+  grid-area: button;
+  margin: 7px 0 7px 0;
+}
+
+.form button {
+  background-color: #5180dd;
+  box-sizing: border-box;
+  width: 7em;
+  height: 3em;
+  color: #e3e3e3;
+  border: 1px #5180dd solid;
+  border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+  transition: 300ms;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -ms-transition: 300ms;
+  -o-transition: 300ms;
+}
+
+.form button:hover {
+  background-color: #334363;
+  border: 1px #334363 solid;
+}
