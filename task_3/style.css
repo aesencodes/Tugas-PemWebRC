@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.body {
+  font-family: "Montserrat", sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.brand p {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.search {
+  width: 50%;
+  height: 2rem;
+  border: 1px black solid;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  box-sizing: border-box;
+}
+
+.search input {
+  width: 95%;
+  height: 100%;
+  border: 0;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.mode i {
+  font-size: 2rem;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+
+.item ul li {
+  display: flex;
+  width: 70%;
+  border: 1px solid;
+  margin: auto;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.item ul li {
+  list-style-type: none;
+  display: flex;
+}
+
+.item ul li p {
+  padding-left: 3px;
+}
